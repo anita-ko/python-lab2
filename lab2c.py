@@ -2,8 +2,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Anita Ko
+# Date: sep 30, 2026
 # Purpose: Practice using if, elif, and else statments.
 # Usage: ./lab2c.py
 
@@ -18,5 +18,12 @@
 # ---- and ---- are equal.
 # Get input from the user
 
+str1 = input("Enter a sentence: ")
+str2 = input("Enter another sentence: ")
 
-
+if len(str1) > len(str2):
+    print(str1, "is longer then", str2 + "!")
+elif len(str2) > len(str1):
+    print(str2, "is longer then", str1 + "!")
+else:
+    print(str1, "and", str2, "are of equal length!")

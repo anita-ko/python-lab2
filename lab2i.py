@@ -1,8 +1,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Anita Ko
+# Date: sep 30, 2026
 # Purpose: Learn how to use while loops for validating user input.
 # Usage: ./lab2i.py
 
@@ -17,3 +17,11 @@
 # number = int(input("Guess what number less than 10 I am thinking off?")) # keep taking input from user until the user enters the correct guess.
 #print("You got it right!") # this statement will be executed when loop has terminated which will only happen when the user enters the number 5.
 # Define the correct PIN
+
+pin = int(input("Please type in your PIN: "))
+
+while pin != 1234:
+    print("Incorrect...try again")
+    pin = int(input("Please type in your PIN: "))
+
+print("Correct PIN, You can enter!")
